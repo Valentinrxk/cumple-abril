@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¡Feliz cumple Abril! ♡♡</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+  </style>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="estrellas" id="estrellas"></div>
+
+<img src="assets/img/flotante1.png" class="flotante" id="flot1">
+
+  <!-- 🎈 Globos animados -->
+  <div class="balloons">
+    <div class="balloon red"></div>
+    <div class="balloon blue"></div>
+    <div class="balloon green"></div>
+    <div class="balloon yellow"></div>
+  </div>
+
+  <!-- 🎉 Sección de bienvenida -->
+  <section class="bienvenida" data-aos="zoom-in" data-aos-duration="1000">
+    <h1 class="titulo-animado">🎂 ¡Feliz cumpleaños, Abril!(˶˃ ᵕ ˂˶) .ᐟ.ᐟ</h1>
+    <div class="gifs-container">
+  <img src="assets/gifs/gif_cuatro.gif" class="gif-deco">
+</div>
+    <p>¡Te queremos mucho!!!!╰(*´︶`*)╯♡	 </p>
+  </section>
+  <button onclick="felicitar()" class="btn-voz">🔊 Escuchar felicitación</button>
+
+  <!-- 📸 Sección de fotos -->
+<section class="fotos" data-aos="zoom-in" data-aos-duration="1000">
+  <h2>fotitos random</h2>
+  <div class="slideshow-container">
+    <div class="slideshow">
+      <button class="slide-btn" id="prev">⬅</button>
+      <img id="slideshow-img" src="assets/img/foto_uno.jpg" alt="Foto de Abril">
+      <button class="slide-btn" id="next">➡</button>
+    </div>
+    <img src="assets/gifs/gif_dos.gif" class="gif-lateral">
+  </div>
+</section>
+
+
+
+  <!-- 🎮 Tetris -->
+<section class="tetris" data-aos="flip-up" data-aos-duration="1000">
+  <h2 id="tetris-title">🎮 ¡Jugá al Tetris! (Puntos: 0)</h2>
+  <div class="tetris-wrapper">
+    <canvas id="tetris" width="360" height="600"></canvas>
+    <div class="gif-wrapper">
+      <img src="assets/gifs/gif_cinco.gif" class="gif-lateral">
+      <p id="high-score">🏆 Puntuación máxima: 0</p>
+    </div>
+    <div id="game-over">💀 ¡Game Over! 💀</div>
+  </div>
+</section>
+
+
+
+
+  <!-- 🎧 Música -->
+  <section class="musica" ata-aos="zoom-in">
+  <audio id="player" controls></audio>
+
+  <img src="assets/gifs/gif_uno.gif" class="gif-abajo">
+</section>
+<footer>
+    <div class="footer-content">
+        <p>¡Espero que te haya gustado! (＾▽＾)</p>
+        <p>Con cariño, valentintin ♡</p>
+    </div>
+    <div class="footer-gifs">
+        <img src="assets/gifs/gif_tres.gif" class="gif-footer
+</footer>
+
+  <!-- JS -->
+  <script src="tetris.js"></script>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
