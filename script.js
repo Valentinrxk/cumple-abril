@@ -26,7 +26,7 @@ const images = [
   'foto_cinco.jpg',
   'foto_seis.jpg',
   'foto_siete.jpg',
-  'foto_ocho.png'
+  'foto_ocho.jpg'
 ];
 
 let current = 0;
