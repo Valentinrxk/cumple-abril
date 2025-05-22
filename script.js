@@ -26,7 +26,6 @@ const images = [
   'foto_cinco.jpg',
   'foto_seis.jpg',
   'foto_siete.jpg',
-  'foto_ocho.jpg'
 ];
 
 let current = 0;
@@ -89,7 +88,11 @@ window.addEventListener('load', generarEstrellas);
 
 function reproducirCancion(index) {
   audioPlayer.src = `assets/audio/${canciones[index]}`;
-  audioPlayer.play().catch(e => console.log("Autoplay bloqueado:", e));
+  audioPlayer.play().then(() => {
+    console.log("🎵 Reproduciendo:", canciones[index]);
+  }).catch(e => {
+    console.log("⚠️ El navegador bloqueó el autoplay:", e);
+  });
 }
 function lanzarConfeti() {
   for (let i = 0; i < 100; i++) {
@@ -118,6 +121,7 @@ function iniciarPlaylist() {
   document.removeEventListener('keydown', iniciarPlaylist);
 }
 
+// Esto hace que se inicie la música al primer click/scroll/tecla
 document.addEventListener('click', iniciarPlaylist);
 document.addEventListener('scroll', iniciarPlaylist);
 document.addEventListener('keydown', iniciarPlaylist);
